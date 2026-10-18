@@ -173,13 +173,13 @@ def create_vehicle(
 
 @app.put("/api/vehicles/{vehicle_id}", response_model=schemas.VehicleResponse)
 def update_vehicle(
-    vehice_id: int,
+    vehicle_id: int,
     vehicle_data: schemas.VehicleUpdate,
     database: Session = Depends(get_vehicle_db)
 ):
     vehicle = database.get(
         models.Vehicle,
-        vehice_id
+        vehicle_id
     )
 
     if vehicle is None:
