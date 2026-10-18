@@ -23,7 +23,6 @@ The application implements the four basic CRUD operations:
 - **Update** - Modify an existing record
 - **Delete** - Remove a record
 
----
 
 ## Technologies
 
